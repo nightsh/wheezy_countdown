@@ -7,4 +7,9 @@ echo $NUMBER
 echo -n "Insert new number: "
 read NEW
 
-sed -i "s/>$NUMBER<\/tspan/>$NEW<\/tspan/g" $FILE
+if [ -z "$NEW" ]; then
+    echo "Empty value detected. Execution aborted."
+    exit
+else
+    sed -i "s/>$NUMBER<\/tspan/>$NEW<\/tspan/g" $FILE
+fi
