@@ -2,6 +2,9 @@
 
 # Target file is always the first argument
 FILE=$1
+# Target PNG file name
+FILENAME=`basename $FILE`
+PNG=`echo $FILENAME | sed 's/\(.*\)\.svg/\1\.png/'`
 
 # The number to be updated
 NUMBER=$(cat $FILE | grep -Pzo '(?s)(?<=countdown).*?</' | sed ':a;N;$!ba;s/\n/ /g' | sed 's/.*>\([0-9]*\)<.*/\1/')
@@ -23,6 +26,7 @@ if test `echo $FILE | grep -cE 'RC_(landscape|portrait)'` -ne 0; then
     exit
 else
     sed -i "s/>$NUMBER<\/tspan/>$DAYS<\/tspan/g" $FILE
+    convert $FILE png/$PNG
     echo "Date countdown has been updated."
 fi
 
