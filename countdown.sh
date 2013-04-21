@@ -10,7 +10,7 @@ NUMBER=$(cat $FILE | grep -Pzo '(?s)(?<=countdown).*?</' | sed ':a;N;$!ba;s/\n/ 
 NEW=""
 
 # Target date
-DATE="2013 05 04"
+DATE="2013 05 05"
 
 # Date delta
 DAYS=$(echo $DATE | awk '{dt=mktime($0 " 00 00 00")-systime(); print int(dt/86400) ;}')
