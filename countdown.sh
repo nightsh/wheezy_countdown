@@ -26,7 +26,8 @@ if test `echo $FILE | grep -cE 'RC_(landscape|portrait)'` -ne 0; then
     exit
 else
     sed -i "s/>$NUMBER<\/tspan/>$DAYS<\/tspan/g" $FILE
+    echo -n "Date countdown update OK... "
     convert $FILE png/$PNG
-    echo "Date countdown has been updated."
+    echo "conversion OK."
 fi
 

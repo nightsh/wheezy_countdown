@@ -37,8 +37,8 @@ RC-related ones, maybe due to some separation of data sources.
 
 #### Samples
 
-<img src="http://serenitymedia.ro/uploads/png/days_portrait.png">
-<img src="http://serenitymedia.ro/uploads/png/days_landscape.png">
+<img src="http://nox.usr.sh/uploads/png/days_portrait.png">
+<img src="http://nox.usr.sh/uploads/png/days_landscape.png">
 
 #### Credits
 
