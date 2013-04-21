@@ -6,6 +6,17 @@ Adrien Aubourg.
 
 Theme link: http://wiki.debian.org/DebianArt/Themes/Joy
 
+### Update
+
+I made some adjustments and now the script can be used like this:
+
+    for i in `ls -1 svg/*.svg`; do                                                                                                                     [0m]  6:21:11
+        ./countdown.sh $i
+    done
+
+This will generate the corresponding PNG files out of the SVG sources and put 
+them in the './png/' directory (tune accordingly).
+
 #### Changing the numbers
 
 I have included a sample script that uses nothing but standard GNU utilities to
