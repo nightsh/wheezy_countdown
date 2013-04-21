@@ -10,7 +10,7 @@ Theme link: http://wiki.debian.org/DebianArt/Themes/Joy
 
 I made some adjustments and now the script can be used like this:
 
-    for i in `ls -1 svg/*.svg`; do                                                                                                                     [0m]  6:21:11
+    for i in `ls -1 svg/*.svg`; do
         ./countdown.sh $i
     done
 
@@ -34,6 +34,11 @@ The special IDs used for the countdown values are following the pattern:
 the string 'countdown' in my script, so it can be used to alter any file from
 the batch, but it can be tuned to alter only the portrait files, or only the
 RC-related ones, maybe due to some separation of data sources.
+
+#### Samples
+
+<img src="http://serenitymedia.ro/uploads/png/days_portrait.png">
+<img src="http://serenitymedia.ro/uploads/png/days_landscape.png">
 
 #### Credits
 
