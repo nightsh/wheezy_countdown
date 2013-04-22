@@ -17,6 +17,9 @@ I made some adjustments and now the script can be used like this:
 This will generate the corresponding PNG files out of the SVG sources and put 
 them in the './png/' directory (tune accordingly).
 
+Also, I added a sample cron script I use for FTP upload and some downsizing of 
+the resulted PNG file (modify to suit your own needs).
+
 #### Changing the numbers
 
 I have included a sample script that uses nothing but standard GNU utilities to
