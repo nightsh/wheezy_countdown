@@ -37,8 +37,8 @@ RC-related ones, maybe due to some separation of data sources.
 
 #### Samples
 
-<img src="http://debian.org.ro/uploads/wheezy_countdown/png/days_portrait.png">
-<img src="http://debian.org.ro/uploads/wheezy_countdown/png/days_landscape.png">
+<img src="http://debian.org.ro/uploads/wheezy-countdown/png/days_portrait.png">
+<img src="http://debian.org.ro/uploads/wheezy-countdown/png/days_landscape.png">
 
 #### Credits
 
